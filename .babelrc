@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "lodash",
+    "syntax-dynamic-import",
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "components": "./src/scripts/components",
+        "pages": "./src/scripts/pages",
+        "templates": "./src/scripts/templates"
+      }
+    }]
+  ],
+  "presets": [
+    "es2015"
+  ]
+}
